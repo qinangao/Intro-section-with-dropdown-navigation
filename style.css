@@ -6,15 +6,112 @@
   --Almost-Black: hsl(0, 0%, 8%);
 }
 body {
+  margin: 0 auto;
   font-family: "Epilogue", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 .page {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px 0 10px;
+}
+.hero {
+  margin: 0;
+  padding: 50px 0 10px 0;
+  font-size: 2.2rem;
+}
+.text {
+  line-height: 25px;
+  text-align: center;
+  color: var(--Medium-Gray);
+}
+.openbtn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 .hero_img_mobile {
   width: 100%;
 }
+.clients {
+  margin: 50px 0 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.client-logo {
+  width: 70px;
+}
+.black-btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: var(--Almost-Black);
+  color: var(--Almost-White);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border: none;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  padding-right: 130px;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reg-btn {
+  border: 1.5px solid var(--Medium-Gray);
+  color: var(--Medium-Gray);
+  width: 200px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.sidebar-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .sidepanel {
-  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-color: var(--Almost-White);
+  width: 0;
+  height: 100%;
+}
+.sidepanel a {
+  font-size: 14px;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: var(--Medium-Gray);
+  display: block;
+  transition: 0.3s;
+}
+.sidepanel .closebtn {
+  position: absolute;
+  top: 25px;
+  left: 200px;
 }
