@@ -69,21 +69,26 @@ body {
 .list {
   display: flex;
   flex-direction: column;
-  padding-right: 130px;
+  align-items: flex-start;
+  padding-left: 20px;
 }
 .login {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding-left: 20px;
 }
 .reg-btn {
   border: 1.5px solid var(--Medium-Gray);
   color: var(--Medium-Gray);
-  width: 200px;
+  width: 180px;
   height: 40px;
   background-color: transparent;
   border-radius: 10px;
   font-size: 14px;
+  margin-top: 20px;
 }
 .sidebar-style {
   display: flex;
@@ -91,6 +96,7 @@ body {
   align-items: center;
 }
 .sidepanel {
+  align-items: flex-start;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -104,14 +110,40 @@ body {
 }
 .sidepanel a {
   font-size: 14px;
-  padding: 15px 25px;
+  padding-top: 20px;
   text-decoration: none;
   color: var(--Medium-Gray);
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   transition: 0.3s;
 }
 .sidepanel .closebtn {
   position: absolute;
   top: 25px;
-  left: 200px;
+  left: 170px;
+}
+.dropdown-btn {
+  font-family: "Epilogue", sans-serif;
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  color: var(--Medium-Gray);
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 0;
+}
+
+.dropdown-container {
+  display: none;
+}
+.dd-style {
+  padding-top: 20px;
+}
+.box2 {
+  padding-left: 20px;
 }
