@@ -9,6 +9,7 @@ body {
   margin: 0 auto;
   font-family: "Epilogue", sans-serif;
   font-size: 16px;
+  max-width: 1440px;
 }
 .page {
   width: 100%;
@@ -47,6 +48,7 @@ body {
   width: 100%;
 }
 .clients {
+  width: 100%;
   margin: 50px 0 50px 0;
   display: flex;
   justify-content: space-evenly;
@@ -90,6 +92,10 @@ body {
   font-size: 14px;
   margin-top: 20px;
 }
+.reg-btn:hover {
+  cursor: pointer;
+}
+
 .sidebar-style {
   display: flex;
   flex-direction: column;
@@ -118,6 +124,9 @@ body {
   gap: 10px;
   transition: 0.3s;
 }
+.sidepanel a:hover {
+  cursor: pointer;
+}
 .sidepanel .closebtn {
   position: absolute;
   top: 25px;
@@ -137,6 +146,9 @@ body {
   gap: 15px;
   padding: 0;
 }
+.dropdown-btn:hover {
+  cursor: pointer;
+}
 
 .dropdown-container {
   display: none;
@@ -146,4 +158,45 @@ body {
 }
 .box2 {
   padding-left: 20px;
+}
+@media (max-width: 768px) {
+  .image-hero-desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .hero_img_mobile {
+    display: none;
+  }
+  .for_desktop {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 515px 600px;
+    gap: 5rem;
+  }
+  .image-hero-desktop {
+    height: 650px;
+  }
+  .clients {
+    margin-top: 125px;
+    gap: 2rem;
+  }
+  .hero {
+    font-size: 4.5rem;
+  }
+  span {
+    display: block;
+  }
+  .text {
+    margin-top: 70px;
+    text-align: left;
+    padding-right: 105px;
+  }
+  .text-container {
+    margin-top: 30px;
+    align-items: normal;
+  }
+  .black-btn {
+    margin-top: 50px;
+  }
 }
