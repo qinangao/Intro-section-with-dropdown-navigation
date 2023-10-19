@@ -164,6 +164,10 @@ body {
   .image-hero-desktop {
     display: none;
   }
+  .desktop_navbar,
+  .login_box {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   .hero_img_mobile {
@@ -204,7 +208,17 @@ body {
   .closebtn {
     display: none;
   }
-  .sidepanel {
-    width: 500px;
+  .header {
+    justify-content: space-between;
+  }
+  .left_hearder {
+    display: flex;
+  }
+  .desktop_navbar,
+  .login_box {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
   }
 }
